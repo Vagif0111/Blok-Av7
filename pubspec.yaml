@@ -1,0 +1,35 @@
+name: blok_av
+description: "Blok Av - izometrik piramitten renkli küpleri toplayan bulmaca oyunu."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Yerel depolama (en yüksek skor, ayarlar) ---
+  shared_preferences: ^2.2.3
+
+  # --- Titreşim desteği ---
+  vibration: ^2.0.0
+
+  cupertino_icons: ^1.0.6
+
+  # --- İLERİDE EKLENECEK (altyapı hazır, şu an devre dışı) ---
+  # google_mobile_ads: ^5.1.0       # AdMob entegrasyonu için ileride açılacak
+  # in_app_purchase: ^3.2.0         # Uygulama içi satın alma için ileride açılacak
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
